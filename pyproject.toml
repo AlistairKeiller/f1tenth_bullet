@@ -1,0 +1,15 @@
+[project]
+name = "f1tenth-bullet"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fire>=0.7.0",
+    "matplotlib>=3.10.0",
+    "numpy>=2.2.2",
+    "pybullet>=3.2.7",
+    "scipy>=1.15.1",
+    "seaborn>=0.13.2",
+    "tqdm>=4.67.1",
+]

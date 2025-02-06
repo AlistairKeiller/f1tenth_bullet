@@ -197,7 +197,7 @@ class BulletSim:
                     renderer=pybullet.ER_BULLET_HARDWARE_OPENGL,
                 )
 
-                true_scan_depths = self.get_true_depth_values(imgs[3][240, :])
+                true_scan_depths = self.get_true_depth_values(np.array(imgs[3]).reshape(480, 640)[240, :])
                 _, steering_angle = self.gf.process_lidar(true_scan_depths)
                 # self.target_steering_angle = np.deg2rad(self.linear_Cntrl(self.K,e_state))
                 self.target_steering_angle = -steering_angle
